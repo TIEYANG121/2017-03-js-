@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		body{
+			background-image: url(bg.png);
+			background-repeat: no-repeat;
+			
+		}
+		*{
+			margin: 0px;
+			padding: 0px;
+		}
+		
+		li{
+			list-style: none;
+
+		}
+		.a1{
+			animation:turnaround 3s  linear infinite;
+			margin: 100px 0 0 100px;
+			/*top:500px;*/
+			z-index: 1;
+			position: absolute;
+
+		}
+		.a2{
+			animation:turn 3s  linear infinite;
+			z-index: 9;
+			top:540px;
+			position: absolute;
+
+		}
+		.a3{animation:turns 3s  linear infinite;
+			z-index: 99;
+			top:560px;
+			position: absolute;
+
+		}
+		.a4{animation:ture 3s  linear infinite;
+			z-index: 999;
+			top:580px;
+			position: absolute;
+		}
+		@keyframes  turnaround{
+			from {
+				transform: rotate(0deg);
+
+			}
+			50%{
+			transform: rotate(10deg);
+			}
+			to{
+				transform: rotate(0deg);
+			}
+		}
+		@keyframes  turn{
+			from {
+				transform: translate(0px);
+			}
+			50%{
+				transform: translate(-50px);
+			}
+			to{
+				transform: translate(0px);
+			}
+		}
+		@keyframes  turns{
+			from {
+				transform: translate(0px);
+			}
+			50%{
+				transform: translate(-90px);
+			}
+			to{
+				transform: translate(0px);
+			}
+		}
+		@keyframes  ture{
+			from {
+				transform: translate(0px);
+			}
+			50%{
+				transform: translate(-170px);
+			}
+			to{
+				transform: translate(0px);
+			}
+		}
+	
+	</style>
+</head>
+<body>
+	<ul>
+		<li class="a1"><img src="E:\前端\chuan.png" alt=""></li>
+		<li class="a2"><img src="E:\前端\wave1.png" alt=""></li>
+		<li class="a3"><img src="E:\前端\wave2.png" alt=""></li>
+		<li class="a4"><img src="E:\前端\wave3.png" alt=""></li>
+	</ul>
+</body>
+</html>         

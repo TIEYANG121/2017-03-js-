@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		li{
+			width: 50px;
+			height: 20px;
+			border: 1px solid blue;
+			list-style: none;
+			float: left;
+			cursor:pointer;
+			text-align: center;  
+
+		}
+		img{
+			display: block;
+		}
+	</style>
+</head>
+<body>
+     <img class="pic"  src="images/1.jpg" alt="">
+     <ul class="numberlist">
+	<li>1</li>
+     <li>2</li>
+     <li>3</li>
+     <li>4</li>
+     <li>5</li>
+     </ul>
+     
+		<script src="jquery.js"></script>
+	<script >
+	$('.numberlist li').click(function(){
+		var ind =$(this).index();
+
+		var picSrc =[
+		'images/1.jpg',
+		'images/2.jpg',
+		'images/3.jpg',
+		'images/4.jpg',
+		'images/5.jpg'
+		]
+		var mysrc =picSrc[ind]
+	$('.pic').attr('src',mysrc)
+	})
+		
+	</script>
+</body>
+</html>
